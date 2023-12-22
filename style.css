@@ -40,12 +40,14 @@ body{
     font-size: 2.2rem;
     cursor: pointer;
     border-bottom: 1px solid #000000;
+    transition: 0.5s;
 }
 
 .FAQ-container .content-container .question::after{
     content: '+';
     position: absolute;
     right: -5px;
+    transition: 0.5;
 }
 
 .FAQ-container .content-container .answer{
@@ -56,4 +58,20 @@ body{
     height: 0;
     overflow: hidden;
     transition: 0.3s;
+}
+
+ .FAQ-container .content-container.active .answer{
+    height: 80px;
+}
+
+.FAQ-container .content-container.active .question{
+    font-size: 2rem;
+    transition: 0.5s;
+}
+
+.FAQ-container .content-container.active .question::after{
+    content: '-';
+    font-size: 40px;
+    transition: 0.5;
+    top: 5px;
 }
