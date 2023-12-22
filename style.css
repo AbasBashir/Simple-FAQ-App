@@ -20,3 +20,30 @@ body{
     align-items: center;
     height: 100vh;
 }
+
+.FAQ-container{
+    width: 35%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.FAQ-container .title{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.FAQ-container .content-container .question{
+    position: relative;
+    padding: 18px 0;
+    font-size: 2.2rem;
+    cursor: pointer;
+    border-bottom: 1px solid #000000;
+}
+
+.FAQ-container .content-container .question::after{
+    content: '+';
+    position: absolute;
+    right: -5px;
+}
